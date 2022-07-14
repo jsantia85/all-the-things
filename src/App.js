@@ -142,7 +142,7 @@ const App = () => {
   const [kailanaThings, setKailanaThings] = useState([
     {
       name: 'star',
-      image: 'https://xkcd.com/',
+      image: 'https://imgs.xkcd.com/comics/functional.png',
       attributes: ['starry', 'star', 'really star', 'and again starrrr'],
     },
   ])
