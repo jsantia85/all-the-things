@@ -6,6 +6,7 @@ import FunctionalThings from './pages/FunctionalThings/FunctionalThings'
 import StyledThings from './pages/StyledThings/StyledThings'
 import SillyThings from './pages/SillyThings/SIllyThings'
 import NicksThings from './pages/NicksThings/NicksThings'
+import KailanaThings from './pages/KailanaThings/KailanaThings'
 import Landing from './pages/Landing/Landing'
 
 const App = () => {
@@ -138,6 +139,14 @@ const App = () => {
     },
   ])
 
+  const [kailanaThings, setKailanaThings] = useState([
+    {
+      name: 'star',
+      image: 'https://xkcd.com/',
+      attributes: ['starry', 'star', 'really star', 'and again starrrr'],
+    },
+  ])
+
   return (
     <Routes>
       {/* All the <Route> components should live here */}
@@ -161,6 +170,10 @@ const App = () => {
       <Route
         path="/nicks-things"
         element={<NicksThings things={nicksThings} />}
+      />
+      <Route
+        path="/kailana-things"
+        element={<KailanaThings things={kailanaThings} />}
       />
     </Routes>
     
