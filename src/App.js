@@ -7,6 +7,7 @@ import StyledThings from './pages/StyledThings/StyledThings'
 import SillyThings from './pages/SillyThings/SIllyThings'
 import EnergyThings from './pages/EnergyThings/EnergyThings'
 import NicksThings from './pages/NicksThings/NicksThings'
+import KailanaThings from './pages/KailanaThings/KailanaThings'
 import Landing from './pages/Landing/Landing'
 import DrinkThings from './pages/DrinkThings/DrinkThings'
 
@@ -156,6 +157,14 @@ const App = () => {
     },
   ])
 
+  const [kailanaThings, setKailanaThings] = useState([
+    {
+      name: 'star',
+      image: 'https://imgs.xkcd.com/comics/functional.png',
+      attributes: ['starry', 'star', 'really star', 'and again starrrr'],
+    },
+  ])
+
   return (
     <Routes>
       {/* All the <Route> components should live here */}
@@ -187,6 +196,10 @@ const App = () => {
       <Route
         path="/nicks-things"
         element={<NicksThings things={nicksThings} />}
+      />
+      <Route
+        path="/kailana-things"
+        element={<KailanaThings things={kailanaThings} />}
       />
     </Routes>
     
