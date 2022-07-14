@@ -2,10 +2,10 @@ import ThingCard from '../../components/ThingCard/ThingCard'
 
 import { Link } from 'react-router-dom'
 
-const NicksThings = (props) => {
+const EnergyThings = (props) => {
   return (
     <>
-      <h1>Nick's Things </h1>
+      <h1>Juan's Things</h1>
       <Link to="/">Home</Link>
 
       {props.things.map((thing, idx) => 
@@ -14,4 +14,5 @@ const NicksThings = (props) => {
     </>
   )
 }
-export default NicksThings
+
+export default EnergyThings
